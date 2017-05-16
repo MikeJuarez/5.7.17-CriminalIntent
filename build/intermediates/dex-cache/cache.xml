@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c2fbbe0e61b5225c6aa3506b9e47578e6301facf">
+        sha1="a4ed4c33868e925d8874d3249c4855a6dbd25227">
         <dex dex="C:\AndroidStudioProjects\CriminalIntent\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5efb6b58ddf961ff58479bc4faef33b1afa26309\classes.dex" />
     </item>
 

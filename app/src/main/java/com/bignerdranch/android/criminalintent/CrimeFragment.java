@@ -16,7 +16,6 @@ import android.widget.EditText;
 import java.util.UUID;
 
 import static android.widget.CompoundButton.*;
-import static com.bignerdranch.android.criminalintent.CrimeActivity.EXTRA_CRIME_ID;
 
 /**
  * Created by user on 5/7/2017.
@@ -44,7 +43,7 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        UUID crimeId = (UUID) getActivity().getIntent().getSerializableExtra(EXTRA_CRIME_ID);
+        UUID crimeId = (UUID) getArguments().getSerializable(ARG_CRIME_ID);
         mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
     }
 
@@ -57,7 +56,6 @@ public class CrimeFragment extends Fragment {
         mTitleField.addTextChangedListener(new TextWatcher() {
 
             public void beforeTextChanged(CharSequence s, int start, int before, int count){}
-
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count)
